@@ -16,6 +16,7 @@ public class TestBase {
     @BeforeAll
     static void setup() {
         Configuration.baseUrl = "https://trade.orionprotocol.io/swap";
+        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
     }
 
     @BeforeEach
