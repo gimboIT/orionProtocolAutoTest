@@ -2,6 +2,9 @@ package tests.swap;
 
 import com.codeborne.selenide.Condition;
 import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selectors.byText;
@@ -14,6 +17,8 @@ public class OrionProtocolSwapUITest extends TestBase {
     public static String DEFAULT_TOKEN_SECOND = "USDT";
 
     @Owner("Timurka")
+    @DisplayName("Проверка токенов по умолчанию")
+    @Severity(SeverityLevel.CRITICAL)
     @Test
     void DefaultTokenTest() {
         step("Проверка что первый токен  по умолчанию выбран правильно",() -> {
@@ -25,6 +30,8 @@ public class OrionProtocolSwapUITest extends TestBase {
 
     }
     @Owner("Timurka")
+    @DisplayName("Проверка графика что он показывает токен по умолчанию")
+    @Severity(SeverityLevel.CRITICAL)
     @Test
     void SwapScheduleCheckShow() {
         step("Нажали на кнопку <Go It>",() -> {
@@ -35,6 +42,8 @@ public class OrionProtocolSwapUITest extends TestBase {
         });
     }
     @Owner("Timurka")
+    @DisplayName("Проверка что показывает биржу по умолчанию")
+    @Severity(SeverityLevel.CRITICAL)
     @Test
     void DefaultExchangeTest() {
         step("Проверка что показывает по умолчанию Binance",() -> {
@@ -42,6 +51,8 @@ public class OrionProtocolSwapUITest extends TestBase {
         });
     }
     @Owner("Timurka")
+    @DisplayName("Проверка что можно менять токен на другой")
+    @Severity(SeverityLevel.CRITICAL)
     @Test
     void changeFirstToken() {
         step("Нажали на первый токен",() -> {
