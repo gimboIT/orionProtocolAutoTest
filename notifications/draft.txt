@@ -1,0 +1,5 @@
+curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "764019206", "text": "This is a test from curl", "disable_notification": true}' https://api.telegram.org/bot6134805831:AAG22pPdsfseVxEFtcsOacVkA0Q7r__9zys/sendMessage
+
+curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "764019206", "text": "S": true}' https://api.telegram.org/bot6134805831:AAG22pPdsfseVxEFtcsOacVkA0Q7r__9zys/sendMessage
+\https://api.telegram.org/bot6134805831:AAG22pPdsfseVxEFtcsOacVkA0Q7r__9zys/sendMessage?text=4&chat_id=764019206
+java "-DconfigFile=notifications/telegram.json" -jar notifications/allure-notifications-4.2.1.jar

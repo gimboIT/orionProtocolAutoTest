@@ -31,12 +31,14 @@ public class TestBase {
     @BeforeEach
     void before() {
         SelenideLogger.addListener("allure", new AllureSelenide());
-        open("");
     }
 
     @AfterEach
     void after() {
         Attach.makeScreenshot("LastScreen");
+        Attach.pageSource();
+        Attach.browserConsoleLogs();
+        Attach.addVideo();
         closeWebDriver();
     }
 
