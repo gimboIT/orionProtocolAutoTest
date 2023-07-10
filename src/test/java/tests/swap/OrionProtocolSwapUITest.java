@@ -27,7 +27,6 @@ public class OrionProtocolSwapUITest extends TestBase {
         step("Проверка что в второй токен по умолчанию выбран правильно",() -> {
             $(".SwapReceiving_currencyDropdown__2nC8Q").shouldHave(Condition.text(DEFAULT_TOKEN_SECOND));
         });
-
     }
     @Owner("Timurka")
     @DisplayName("Проверка графика что он показывает токен по умолчанию")
