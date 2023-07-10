@@ -1,16 +1,11 @@
 package tests.swap;
 
-import com.codeborne.selenide.Condition;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import page.OrionProtocolSwapPage;
-
-import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.*;
-import static io.qameta.allure.Allure.step;
 
 public class OrionProtocolSwapUITest extends TestBase {
     public static String TEST_TOKEN = "BUSD";
